@@ -6,6 +6,18 @@ def get_first_column(data):
     Return:
         list: First column.
     """
-    return
     
+    l=data.split("\n")
+    for i in l:
+        return i.split(",")[0]
+    
+    # return [x.split(",")[0] for x in l]
+    
+    
+    
+  
+
 # Read the csv file
+file=open("data.csv", "r")
+data=file.read()
+print(get_first_column(data))
