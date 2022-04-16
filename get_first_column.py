@@ -7,9 +7,14 @@ def get_first_column(data):
         list: First column.
     """
     
-    l=data.split("\n")
-    for i in l:
-        return i.split(",")[0]
+    l=data.split("\n")  
+    list=[]
+    for x in l:
+        list.append(x.split(",")[0])
+    return list
+    
+
+        
     
     # return [x.split(",")[0] for x in l]
     
