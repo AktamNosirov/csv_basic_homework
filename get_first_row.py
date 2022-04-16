@@ -8,7 +8,7 @@ def get_first_row(data):
     """
    
     l=data.split("\n")
-    return list(l[0].split(","))
+    return list(l[1].split(","))
 
 file=open("data.csv", "r")
 data=file.read()
