@@ -14,7 +14,7 @@ def get_column_names(data):
     
     
     
-    return l[0]  
+    return list(l[0].split(","))
 
 # Read the csv file
 file=open("data.csv", "r")
